@@ -69,8 +69,8 @@ section {
   float: left;
 }
 .information {
-  /* 마진 겹침 현상 */
-  padding-left: 150px;
+  /* margin overlap */
+  padding-left: 135px;
 }
 .name {
   padding: 8px 0px;
