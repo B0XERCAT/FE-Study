@@ -14,7 +14,7 @@ img {
   width: 500px;
 }
 h1 {
-  color: white;
+  color: var(--name-text);
   font-size: 32px;
   margin: 20px 0px;
 }
@@ -22,7 +22,7 @@ table {
   border: 1px solid var(--border2);
   border-radius: 10px;
   padding: 10px;
-  color: white;
+  color: var(--name-text);
   border-collapse: collapse;
   display: block;
   margin-bottom: 40px;

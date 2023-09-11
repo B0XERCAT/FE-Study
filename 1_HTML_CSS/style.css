@@ -2,6 +2,7 @@
   --border1: rgb(224, 184, 51);
   --border2: rgb(80, 69, 69);
   --data-text: rgb(148, 147, 147);
+  --name-text: white;
 }
 * {
   margin: 0;
@@ -59,10 +60,6 @@ section {
   border: 1px solid var(--border1);
   transition: ease-in 0.2s;
 }
-p,
-h2 {
-  color: white;
-}
 .img-wrapper {
   display: flex;
   justify-content: center;
@@ -70,3 +67,17 @@ h2 {
   height: 100%;
   float: left;
 }
+.information{
+  /* 마진 겹침 현상 */
+  padding-left: 150px; 
+}
+.name{
+  padding: 8px 0px; 
+  font-size: 24px;
+  color: var(--name-text);
+}
+p{
+  padding: 2px 0px;
+  color: var(--data-text);
+}
+
