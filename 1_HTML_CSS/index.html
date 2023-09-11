@@ -3,159 +3,148 @@
   <head>
     <meta charset="UTF-8" />
     <title>Pokemon List</title>
-    <style>
-      * {
-        padding: 0;
-        margin: 0;
-        background-color: black;
-        color: white;
-      }
-      header {
-        border-bottom: 1px solid goldenrod;
-        padding: 15px;
-        margin-bottom: 30px;
-      }
-      header a {
-        font-size: 30px;
-        font-weight: bolder;
-        color: goldenrod;
-      }
-      a,
-      a:visited {
-        text-decoration: none;
-      }
-      #card {
-        padding: 10px;
-        border: 1px solid white;
-        border-radius: 15px;
-        margin-left: 5%;
-        margin-right: 5%;
-        margin-bottom: 30px;
-      }
-      #card:hover {
-        border: 1px solid goldenrod;
-        transition: all 0.2s ease-in-out;
-      }
-      #image {
-        float: left;
-        height: 100px;
-        width: 100px;
-      }
-      #name {
-        font-size: 23px;
-        font-weight: 800;
-      }
-      #height,
-      #weight,
-      #types {
-        font-weight: 100;
-      }
-    </style>
+    <link rel="stylesheet" href="reset.css" />
+    <link rel="stylesheet" href="style.css" />
   </head>
   <body>
-    <header>
-      <a href="index.html">Pokemon List</a>
-    </header>
-    <div id="container">
-      <div id="card">
-        <div id="image"></div>
-        <div id="information">
-          <div id="name">Bulbasaur</div>
-          <div id="height">height: 7 dm</div>
-          <div id="weight">weight: 69 hg</div>
-          <div id="types">types: grass, poison</div>
+    <div class="container">
+      <header><a href="index.html">Pokemon List </a></header>
+      <section id="content">
+        <div class="column">
+          <div class="item">
+            <a href="pokemon/1.html"
+              ><div class="img-wrapper">
+                <img src="pokemon/images/1.png" />
+              </div>
+              <div class="information">
+                <h2 class="name">Pikachu</h2>
+                <p class="height">height: 0.4 m</p>
+                <p class="weight">weight: 6.0 kg</p>
+                <p class="types">types: electric</p>
+              </div></a
+            >
+          </div>
+          <div class="item">
+            <a href="pokemon/2.html"
+              ><div class="img-wrapper">
+                <img src="pokemon/images/2.png" />
+              </div>
+              <div class="information">
+                <h2 class="name">Raichu</h2>
+                <p class="height">height: 0.8 m</p>
+                <p class="weight">weight: 30.0 kg</p>
+                <p class="types">types: electric</p>
+              </div></a
+            >
+          </div>
+          <div class="item">
+            <a href="pokemon/3.html"
+              ><div class="img-wrapper">
+                <img src="pokemon/images/3.png" />
+              </div>
+              <div class="information">
+                <h2 class="name">Charmander</h2>
+                <p class="height">height: 0.61 m</p>
+                <p class="weight">weight: 8.5 kg</p>
+                <p class="types">types: fire</p>
+              </div></a
+            >
+          </div>
+          <div class="item">
+            <a href="pokemon/4.html"
+              ><div class="img-wrapper">
+                <img src="pokemon/images/4.png" />
+              </div>
+              <div class="information">
+                <h2 class="name">Squirtle</h2>
+                <p class="height">height: 0.5 m</p>
+                <p class="weight">weight: 9.0 kg</p>
+                <p class="types">types: water</p>
+              </div></a
+            >
+          </div>
+          <div class="item">
+            <a href="pokemon/5.html"
+              ><div class="img-wrapper">
+                <img src="pokemon/images/5.png" />
+              </div>
+              <div class="information">
+                <h2 class="name">Jigglypuff</h2>
+                <p class="height">height: 0.5 m</p>
+                <p class="weight">weight: 5.5 kg</p>
+                <p class="types">types: normal, fairy</p>
+              </div></a
+            >
+          </div>
         </div>
-      </div>
-      <div id="card">
-        <div id="image"></div>
-        <div id="information">
-          <div id="name">Bulbasaur</div>
-          <div id="height">height: 7 dm</div>
-          <div id="weight">weight: 69 hg</div>
-          <div id="types">types: grass, poison</div>
+        <div class="column">
+          <div class="item">
+            <a href="pokemon/6.html"
+              ><div class="img-wrapper">
+                <img src="pokemon/images/6.png" />
+              </div>
+              <div class="information">
+                <h2 class="name">Ditto</h2>
+                <p class="height">height: 0.3 m</p>
+                <p class="weight">weight: 4.0 kg</p>
+                <p class="types">types: normal</p>
+              </div></a
+            >
+          </div>
+          <div class="item">
+            <a href="pokemon/7.html"
+              ><div class="img-wrapper">
+                <img src="pokemon/images/7.png" />
+              </div>
+              <div class="information">
+                <h2 class="name">Snorlax</h2>
+                <p class="height">height: 2.11 m</p>
+                <p class="weight">weight: 460.0 kg</p>
+                <p class="types">types: normal</p>
+              </div></a
+            >
+          </div>
+          <div class="item">
+            <a href="pokemon/8.html"
+              ><div class="img-wrapper">
+                <img src="pokemon/images/8.png" />
+              </div>
+              <div class="information">
+                <h2 class="name">Dratini</h2>
+                <p class="height">height: 1.8 m</p>
+                <p class="weight">weight: 3.3 kg</p>
+                <p class="types">types: dragon</p>
+              </div></a
+            >
+          </div>
+          <div class="item">
+            <a href="pokemon/9.html"
+              ><div class="img-wrapper">
+                <img src="pokemon/images/9.png" />
+              </div>
+              <div class="information">
+                <h2 class="name">Dragonite</h2>
+                <p class="height">height: 2.2 m</p>
+                <p class="weight">weight: 210.0 kg</p>
+                <p class="types">types: dragon, flying</p>
+              </div></a
+            >
+            </div>
+          <div class="item">
+            <a href="pokemon/10.html"
+              ><div class="img-wrapper">
+                <img src="pokemon/images/10.png" />
+              </div>
+              <div class="information">
+                <h2 class="name">Mew</h2>
+                <p class="height">height: 0.4 m</p>
+                <p class="weight">weight: 4.0 kg</p>
+                <p class="types">types: psychic</p>
+              </div></a
+            >
+          </div>
         </div>
-      </div>
-      <div id="card">
-        <div id="image"></div>
-        <div id="information">
-          <div id="name">Bulbasaur</div>
-          <div id="height">height: 7 dm</div>
-          <div id="weight">weight: 69 hg</div>
-          <div id="types">types: grass, poison</div>
-        </div>
-      </div>
-      <div id="card">
-        <div id="image"></div>
-        <div id="information">
-          <div id="name">Bulbasaur</div>
-          <div id="height">height: 7 dm</div>
-          <div id="weight">weight: 69 hg</div>
-          <div id="types">types: grass, poison</div>
-        </div>
-      </div>
-      <div id="card">
-        <div id="image"></div>
-        <div id="information">
-          <div id="name">Bulbasaur</div>
-          <div id="height">height: 7 dm</div>
-          <div id="weight">weight: 69 hg</div>
-          <div id="types">types: grass, poison</div>
-        </div>
-      </div>
-      <div id="card">
-        <div id="image"></div>
-        <div id="information">
-          <div id="name">Bulbasaur</div>
-          <div id="height">height: 7 dm</div>
-          <div id="weight">weight: 69 hg</div>
-          <div id="types">types: grass, poison</div>
-        </div>
-      </div>
-      <div id="card">
-        <div id="image"></div>
-        <div id="information">
-          <div id="name">Bulbasaur</div>
-          <div id="height">height: 7 dm</div>
-          <div id="weight">weight: 69 hg</div>
-          <div id="types">types: grass, poison</div>
-        </div>
-      </div>
-      <div id="card">
-        <div id="image"></div>
-        <div id="information">
-          <div id="name">Bulbasaur</div>
-          <div id="height">height: 7 dm</div>
-          <div id="weight">weight: 69 hg</div>
-          <div id="types">types: grass, poison</div>
-        </div>
-      </div>
-      <div id="card">
-        <div id="image"></div>
-        <div id="information">
-          <div id="name">Bulbasaur</div>
-          <div id="height">height: 7 dm</div>
-          <div id="weight">weight: 69 hg</div>
-          <div id="types">types: grass, poison</div>
-        </div>
-      </div>
-      <div id="card">
-        <div id="image"></div>
-        <div id="information">
-          <div id="name">Bulbasaur</div>
-          <div id="height">height: 7 dm</div>
-          <div id="weight">weight: 69 hg</div>
-          <div id="types">types: grass, poison</div>
-        </div>
-      </div>
-      <div id="card">
-        <div id="image"></div>
-        <div id="information">
-          <div id="name">Bulbasaur</div>
-          <div id="height">height: 7 dm</div>
-          <div id="weight">weight: 69 hg</div>
-          <div id="types">types: grass, poison</div>
-        </div>
-      </div>
+      </section>
     </div>
   </body>
 </html>
