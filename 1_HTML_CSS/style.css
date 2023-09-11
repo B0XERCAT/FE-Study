@@ -1,4 +1,4 @@
-:root{
+:root {
   --border1: rgb(224, 184, 51);
   --border2: rgb(80, 69, 69);
   --data-text: rgb(148, 147, 147);
@@ -10,6 +10,7 @@
 }
 body {
   background-color: black;
+  font-family: "Ubuntu", sans-serif;
 }
 a {
   text-decoration: none;
@@ -67,17 +68,16 @@ section {
   height: 100%;
   float: left;
 }
-.information{
+.information {
   /* 마진 겹침 현상 */
-  padding-left: 150px; 
+  padding-left: 150px;
 }
-.name{
-  padding: 8px 0px; 
+.name {
+  padding: 8px 0px;
   font-size: 24px;
   color: var(--name-text);
 }
-p{
+p {
   padding: 2px 0px;
   color: var(--data-text);
 }
-
