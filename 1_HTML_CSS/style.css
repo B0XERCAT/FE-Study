@@ -52,7 +52,7 @@ section {
   }
   .column {
     width: 40%;
-    /* min-width°¡ ÀÖ¾î¾ß types ÁÙ¹Ù²Þ ¾ÈµÊ */
+    /* min-width to prevent "types" line breaks */
     min-width: 20rem;
     max-width: 43.5rem;
   }
@@ -69,7 +69,7 @@ section {
   float: left;
 }
 .information {
-  /* margin overlap */
+  /* margin collapse */
   padding-left: 8.5rem;
 }
 .name {
