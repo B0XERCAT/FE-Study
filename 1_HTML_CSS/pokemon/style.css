@@ -5,31 +5,43 @@ section {
 }
 .img-wrapper {
   border: 1px solid var(--border1);
-  width: 500px;
-  height: 500px;
+  width: 32rem;
+  height: 32rem;
   border-radius: 50%;
   overflow: hidden;
 }
 img {
-  width: 500px;
+  width: 32rem;
+}
+@media (max-width: 425px) {
+  .img-wrapper {
+    border: 1px solid var(--border1);
+    width: 20rem;
+    height: 20rem;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+  img {
+    width: 20rem;
+  }
 }
 h1 {
   color: var(--name-text);
-  font-size: 32px;
-  margin: 20px 0px;
+  font-size: 2rem;
+  margin: 1.25rem 0px;
 }
 table {
   border: 1px solid var(--border2);
-  border-radius: 10px;
-  padding: 10px;
+  border-radius: 1rem;
+  padding: 1rem;
   color: var(--name-text);
   border-collapse: collapse;
   display: block;
-  margin-bottom: 40px;
+  margin-bottom: 2.5rem;
 }
 tr {
   border-bottom: 1px solid var(--border2);
-  padding: 7px 10px;
+  padding: 0.5rem 0.75rem;
   display: block;
 }
 tr:last-child {
@@ -37,10 +49,10 @@ tr:last-child {
 }
 th {
   text-align: left;
-  width: 130px;
+  width: 8.75rem;
 }
 td {
   color: var(--data-text);
   text-align: right;
-  width: 220px;
+  width: 13rem;
 }
