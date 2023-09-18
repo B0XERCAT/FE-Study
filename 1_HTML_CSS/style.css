@@ -1,91 +1,96 @@
 :root {
-	--border1: rgb(224, 184, 51);
-	--border2: rgb(80, 69, 69);
-	--data-text: rgb(148, 147, 147);
-	--name-text: white;
+  --border1: rgb(224, 184, 51);
+  --border2: rgb(80, 69, 69);
+  --data-text: rgb(148, 147, 147);
+  --name-text: white;
 }
 
 * {
-	margin: 0;
-	padding: 0;
+  margin: 0;
+  padding: 0;
 }
 
 body {
-	background-color: black;
-	font-family: "Ubuntu", sans-serif;
+  background-color: black;
+  font-family: "Ubuntu", sans-serif;
 }
 
 a {
-	text-decoration: none;
+  text-decoration: none;
 }
 
 header {
-	padding: 1rem 2rem;
-  display: grid;
-  justify-content: center;
-  grid-template-columns: minmax(42.5rem, 89.5rem);
-	border-bottom: 1px solid var(--border1);
-}
-
-header a {
-	font-size: 1.5rem;
-	font-weight: bold;
-	color: var(--border1);
-}
-
-.item {
-	border: 1px solid var(--border2);
-	height: 7rem;
-	padding: 0.6rem;
-	border-radius: 1.25rem;
-}
-
-section {
-	display: grid;
-	grid-auto-rows: 7rem;
-	row-gap: 3rem;
-	justify-content: center;
-	padding: 2rem;
-}
-
-@media (max-width: 768px) {
-	section {
-		grid-template-columns: minmax(auto, 43.5rem);
-	}
+  padding: 1rem 2rem;
+  border-bottom: 1px solid var(--border1);
 }
 
 @media (min-width: 769px) {
-	section {
-		grid-template-columns: repeat(2, minmax(20rem, 43.5rem));
-		column-gap: 2.5rem;
-	}
+  header {
+    display: grid;
+    justify-content: center;
+    grid-template-columns: minmax(42.5rem, 89.5rem);
+  }
+}
+
+header a {
+  font-size: 1.5rem;
+  font-weight: bold;
+  color: var(--border1);
+}
+
+.item {
+  border: 1px solid var(--border2);
+  height: 7rem;
+  padding: 0.6rem;
+  border-radius: 1.25rem;
+}
+
+section {
+  display: grid;
+  grid-auto-rows: 7rem;
+  row-gap: 3rem;
+  justify-content: center;
+  padding: 2rem;
+}
+
+@media (max-width: 768px) {
+  section {
+    grid-template-columns: minmax(auto, 43.5rem);
+  }
+}
+
+@media (min-width: 769px) {
+  section {
+    grid-template-columns: repeat(2, minmax(20rem, 43.5rem));
+    column-gap: 2.5rem;
+  }
 }
 
 .item:hover {
-	border: 1px solid var(--border1);
-	transition: ease 0.3s;
+  border: 1px solid var(--border1);
+  transition: ease 0.3s;
 }
 
 .img-wrapper {
-	display: flex;
-	justify-content: center;
-	width: 8.75rem;
-	height: 100%;
-	float: left;
+  display: flex;
+  justify-content: center;
+  width: 8.75rem;
+  height: 100%;
+  float: left;
 }
 
 .information {
-	/* margin collapse */
-	padding-left: 8.5rem;
+  /* margin collapse */
+  padding-left: 8.5rem;
 }
 
 .name {
-	padding: 0.5rem 0;
-	font-size: 1.5rem;
-	color: var(--name-text);
+  padding: 0.5rem 0;
+  font-size: 1.5rem;
+  color: var(--name-text);
 }
 
 p {
-	padding: 0.15rem 0;
-	color: var(--data-text);
+  padding: 0.15rem 0;
+  color: var(--data-text);
 }
