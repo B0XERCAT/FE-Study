@@ -148,18 +148,22 @@ document.addEventListener("DOMContentLoaded", function () {
     const card = document.createElement("div");
     card.setAttribute("class", "card");
     card.addEventListener("click", () => {
-      window.location.href = `./pokemon/${+key + 1}.html`;
+      window.localStorage.setItem(
+        "pokemonDetails",
+        JSON.stringify({ key: +key + 1, ...pokemon })
+      );
+      window.location.href = `./pokemon/detail.html`;
     });
     const image = document.createElement("img");
     image.src = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${+key + 1}.png`;
-    image.alt = `${pokemon.name}`;
+    image.alt = pokemon.name;
     const infoWrapper = document.createElement("div");
     infoWrapper.setAttribute("class", "info-wrapper");
     const name = document.createElement("h2");
     const height = document.createElement("p");
     const weight = document.createElement("p");
     const types = document.createElement("p");
-    name.textContent = `${pokemon.name}`;
+    name.textContent = pokemon.name;
     height.textContent = `height: ${pokemon.height} dm`;
     weight.textContent = `weight: ${pokemon.weight} hg`;
     types.textContent = `types: ${pokemon.types.join(", ")}`;
