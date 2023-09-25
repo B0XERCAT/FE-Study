@@ -4,7 +4,7 @@ document.addEventListener("DOMContentLoaded", function () {
   const imgWrapper = document.createElement("div");
   imgWrapper.setAttribute("class", "img-wrapper");
   const image = document.createElement("img");
-  image.src = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${pokemon.key}.png`;
+  image.src = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${pokemon.detailIdx}.png`;
   image.alt = pokemon.name;
   imgWrapper.append(image);
   const name = document.createElement("h2");

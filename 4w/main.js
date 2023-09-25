@@ -143,19 +143,19 @@ const data = [
 
 document.addEventListener("DOMContentLoaded", function () {
   const cardWrapper = document.getElementById("card-wrapper");
-  for (let key in data) {
-    const pokemon = data[key];
+  for (let idx in data) {
+    const pokemon = data[idx];
     const card = document.createElement("div");
     card.setAttribute("class", "card");
     card.addEventListener("click", () => {
       window.localStorage.setItem(
         "pokemonDetails",
-        JSON.stringify({ key: +key + 1, ...pokemon })
+        JSON.stringify({ detailIdx: +idx + 1, ...pokemon })
       );
       window.location.href = `./pokemon/detail.html`;
     });
     const image = document.createElement("img");
-    image.src = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${+key + 1}.png`;
+    image.src = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${+idx + 1}.png`;
     image.alt = pokemon.name;
     const infoWrapper = document.createElement("div");
     infoWrapper.setAttribute("class", "info-wrapper");
