@@ -7,17 +7,17 @@ interface PokemonProps {
     weight: string;
     types: string[];
   };
-  idx: number;
+  itemIndex: number;
 }
 
 const PokemonItem = (props: PokemonProps) => {
   const pokemon = props.pokemon;
-  const idx = props.idx;
+  const index = props.itemIndex;
   const imageSrc = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${
-    idx + 1
+    index + 1
   }.png`;
   return (
-    <Link to={`/${idx}`}>
+    <Link to={`/${index}`}>
       <div className="card">
         <img src={imageSrc} alt=""></img>
         <div className="info-wrapper">

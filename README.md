@@ -3,4 +3,3 @@
 1. [HTML, CSS](https://seojin3154.github.io/FE-Study/3w)
 2. [JavaScript & DOM](https://seojin3154.github.io/FE-Study/4w)
 3. [TypeScript](https://seojin3154.github.io/FE-Study/5w)
-3. [React](https://seojin3154.github.io/FE-Study/9w)

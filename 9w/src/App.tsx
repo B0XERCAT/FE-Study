@@ -14,7 +14,7 @@ function App() {
       <main>
         <Routes>
           <Route path="/" element={<PokemonList />}></Route>
-          <Route path="/:idx" element={<PokemonDetail />}></Route>
+          <Route path="/:detailIndex" element={<PokemonDetail />}></Route>
         </Routes>
       </main>
     </BrowserRouter>

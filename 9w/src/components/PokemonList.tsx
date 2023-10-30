@@ -4,8 +4,8 @@ import { data } from "../data";
 const PokemonList = () => {
   return (
     <div className="card-wrapper">
-      {data.map((pokemon, index) => (
-        <PokemonItem idx={index} pokemon={pokemon} key={index}/>
+      {data.map((pokemon, dataIndex) => (
+        <PokemonItem itemIndex={dataIndex} pokemon={pokemon} key={dataIndex} />
       ))}
     </div>
   );
