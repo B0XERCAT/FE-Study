@@ -154,7 +154,9 @@ for (let idx in data) {
     window.location.href = `./pokemon/detail.html`;
   });
   const image = document.createElement("img");
-  image.src = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${Number(idx) + 1}.png`;
+  image.src = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${
+    Number(idx) + 1
+  }.png`;
   image.alt = pokemon.name;
   const infoWrapper = document.createElement("div");
   infoWrapper.setAttribute("class", "info-wrapper");
@@ -170,3 +172,11 @@ for (let idx in data) {
   card.append(image, infoWrapper);
   cardWrapper.appendChild(card);
 }
+
+async function fetchUser() {
+  return 'after 10 sec'
+}
+
+const user = fetchUser();
+user.then(console.log);
+console.log(user);
