@@ -31,11 +31,15 @@ const PokemonList = () => {
         });
     });
   }, []);
-  console.log(pokemons);
   return (
     <div className="card-wrapper">
       {pokemons.map((pokemon, dataIndex) => (
-        <PokemonItem itemIndex={dataIndex} pokemon={pokemon} key={dataIndex} />
+        <PokemonItem
+          itemIndex={dataIndex}
+          pokemon={pokemon}
+          key={dataIndex}
+          pokemonLength={pokemons.length}
+        />
       ))}
     </div>
   );

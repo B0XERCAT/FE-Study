@@ -4,13 +4,13 @@ import { PokemonMain } from "./PokemonList";
 interface PokemonProps {
   pokemon: PokemonMain;
   itemIndex: number;
+  pokemonLength: number;
 }
 
 const PokemonItem = (props: PokemonProps) => {
   const pokemon = props.pokemon;
   const index = props.itemIndex;
-  if(index >= 20)
-    return <></>;
+  if (index >= props.pokemonLength / 2) return <></>;
   const imageSrc = `https://raw.githubusercontent.com/PokeAPI/sprites/master/sprites/pokemon/other/official-artwork/${
     index + 1
   }.png`;
