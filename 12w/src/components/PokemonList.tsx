@@ -31,7 +31,7 @@ const PokemonList = () => {
     });
   }, []);
   return (
-    <div className="card-wrapper">
+    <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 max-w-5xl mx-auto w-full ">
       {pokemons.map((pokemon, dataIndex) => (
         <PokemonItem
           itemIndex={dataIndex}
