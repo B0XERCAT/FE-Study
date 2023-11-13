@@ -14,13 +14,13 @@ const PokemonList = () => {
   useEffect(() => {
     axios.get("https://pokeapi.co/api/v2/pokemon").then((response) => {
       let pokemonResult = response.data.results;
-      const promises = [];
+      const requests = [];
 
       for (let i = 0; i < pokemonResult.length; i++) {
-        promises.push(axios.get(`https://pokeapi.co/api/v2/pokemon/${i + 1}`));
+        requests.push(axios.get(`https://pokeapi.co/api/v2/pokemon/${i + 1}`));
       }
 
-      Promise.all(promises)
+      axios.all(requests)
         .then((responses) => {
           const newPokemons = responses.map((response) => response.data);
           setPokemons((prevPokemons) => [...prevPokemons, ...newPokemons]);

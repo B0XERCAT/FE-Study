@@ -172,11 +172,3 @@ for (let idx in data) {
   card.append(image, infoWrapper);
   cardWrapper.appendChild(card);
 }
-
-async function fetchUser() {
-  return 'after 10 sec'
-}
-
-const user = fetchUser();
-user.then(console.log);
-console.log(user);
