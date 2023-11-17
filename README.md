@@ -1,5 +1,9 @@
 # SKKUDING FE-Study
-0. [Notion](https://www.notion.so/5eb69ed405ef4c059d70f6461350cf8c)
-1. [HTML, CSS](https://seojin3154.github.io/FE-Study/3w)
-2. [JavaScript & DOM](https://seojin3154.github.io/FE-Study/4w)
-3. [TypeScript](https://seojin3154.github.io/FE-Study/5w)
+### [Notion Link](https://www.notion.so/5eb69ed405ef4c059d70f6461350cf8c)
+* ### 3w: HTML, CSS
+* ### 4w: JavaScript & DOM
+* ### 5w: TypeScript
+* ### 9w: React
+* ### 11w: Data Fetching
+* ### 12w: Tailwind CSS
+* ### 13w: Next.js
