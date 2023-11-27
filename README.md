@@ -7,3 +7,4 @@
 * ### 11w: Data Fetching
 * ### 12w: Tailwind CSS
 * ### 13w: Next.js
+* ### 14w: React2
