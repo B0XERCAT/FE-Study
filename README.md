@@ -1,5 +1,5 @@
 # SKKUDING FE-Study
-### [Notion Link](https://www.notion.so/5eb69ed405ef4c059d70f6461350cf8c)
+### [Notion Link](https://www.notion.so/skkuding/300a91582edb432d9dd3842668f34713)
 * ### 3w: HTML, CSS
 * ### 4w: JavaScript & DOM
 * ### 5w: TypeScript
