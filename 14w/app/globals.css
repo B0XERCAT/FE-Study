@@ -1,0 +1,15 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    @apply font-sans font-medium text-[theme(colors.text-color)] bg-[theme(colors.bg-color)];
+  }
+  tr:first-child td:last-child {
+    @apply capitalize;
+  }
+  tr:last-child {
+    @apply border-b-0;
+  }
+}
